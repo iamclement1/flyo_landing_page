@@ -9,13 +9,12 @@ html {
 *:active,
 * {
   box-sizing: border-box;
-  /* margin: 0; */
+
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   line-height: 1.7rem;
 }
 body {
-  /* background-color: hsl(218, 28%, 13%); */
   color: hsl(0, 0%, 100%);
   max-width: 1440px;
   margin: 0 auto;
@@ -33,7 +32,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 2.1rem;
-  /* height: 6em; */
 }
 nav ul {
   list-style-type: none;
@@ -101,7 +99,7 @@ nav .logo {
   padding-top: 2rem;
   text-align: center;
 }
-.text {
+.content_text {
   margin-top: 0;
   width: 65%;
 }
@@ -188,7 +186,7 @@ nav .logo {
   margin-top: 12rem;
   padding: 3rem 3rem 10rem 3rem;
 }
-.get {
+.get_info {
   position: relative;
   height: 30vh;
 }
@@ -285,4 +283,86 @@ footer li:not(:last-child) {
 
 .footer_img {
   margin: 0 1rem 0 0;
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    font-size: 10px;
+    margin: 0 5px;
+  }
+
+  nav .nav_logo {
+    width: 100px;
+  }
+  .header_info {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .header_text h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .header_info button {
+    width: 70%;
+  }
+  .content_text {
+    margin: 0;
+    width: 95%;
+  }
+
+  .row {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .productive .image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .productive_text h1 {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .productive_text p {
+    font-size: 14px;
+  }
+
+  .box_1 {
+    width: 350px;
+  }
+
+  .early_access h1 {
+    font-size: 1rem;
+  }
+
+  .get_info {
+    max-width: 100%;
+  }
+
+  form input {
+    width: 100%;
+    margin: 3px 0;
+    padding: 0 1rem;
+  }
+  form button {
+    width: 100%;
+  }
+  .Footer_logo_box {
+    width: 20px;
+  }
 }
