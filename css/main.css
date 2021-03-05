@@ -293,9 +293,7 @@ footer li:not(:last-child) {
 }
 
 @media screen and (max-width: 475px) {
-  /* body{
-        background: red;
-    } */
+ 
   nav {
     display: flex;
     justify-content: space-between;
@@ -303,7 +301,6 @@ footer li:not(:last-child) {
   }
   nav ul li {
     display: inline;
-    /* margin: 0 0.1rem; */
     font-size: 1rem;
   }
 
@@ -410,9 +407,6 @@ footer li:not(:last-child) {
   }
   .footer_row {
     display: block;
-    /* justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; */
   }
   .footer_icons{
       text-align: center;
