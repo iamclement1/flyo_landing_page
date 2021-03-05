@@ -8,7 +8,7 @@ html {
 *:visited,
 *:active,
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;a
   padding: 0;
   /* border: 1px solid red; */
   line-height: 1.7rem;
@@ -178,6 +178,13 @@ nav .logo {
 .space {
   margin-top: 7rem;
 }
+
+.row{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
 .testimony {
   background-image: url(../images/bg-quotes.png);
   background-position-x: 3rem;
@@ -185,6 +192,7 @@ nav .logo {
   margin-top: 12rem;
   padding: 3rem 3rem 10rem 3rem;
 }
+
 .get_info {
   position: relative;
   height: 30vh;
@@ -284,84 +292,129 @@ footer li:not(:last-child) {
   margin: 0 1rem 0 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 475px) {
+  /* body{
+        background: red;
+    } */
   nav {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1rem;
-    margin: 0;
   }
-
   nav ul li {
     display: inline;
-    font-size: 10px;
-    margin: 0 5px;
+    /* margin: 0 0.1rem; */
+    font-size: 1rem;
   }
 
-  nav .nav_logo {
-    width: 100px;
+  nav .logo {
+    max-width: 100px;
+  }
+  nav ul li a {
+    margin: 0.2rem;
   }
   .header_info {
     margin: 0 auto;
     width: 90%;
+    padding: 0 0 5rem 0;
   }
-
+  .header_info button {
+    width: 80%;
+  }
   .header_text h1 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-
-  .header_info button {
-    width: 70%;
-  }
-  .content_text {
-    margin: 0;
+  .text {
+    margin-top: 0;
     width: 95%;
   }
-
-  .row {
-    max-width: 80%;
-    margin: 0 auto;
+  .bg {
+    background-image: url(../images/bg-curvy-mobile.svg);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
-
-  .productive .image {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
   .productive_text h1 {
+    font-size: 1.2rem;
     max-width: 100%;
-    font-size: 15px;
-    line-height: 2rem;
-    text-align: center;
     margin: 0;
+    line-height: 3rem;
   }
-
-  .productive_text p {
-    font-size: 14px;
+  .testimony {
+    background-image: url(../images/bg-quotes.png);
+    background-position-x: 2rem;
+    background-repeat: no-repeat;
+    margin-top: 9rem;
+    padding: 2.5rem 2rem 20rem 2rem;
   }
-
   .box_1 {
-    width: 350px;
+    min-width: 100%;
+    max-width: fit-content;
+    padding: 1rem;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 7px;
+    margin-bottom: 0.9rem;
+  }
+  .early_access {
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 20rem;
+    background-color: #181f2b;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.829);
   }
 
+  .early_access h1{    
+    padding: 2rem 0 0 0;
+  }
+  .get {
+    width: 100%;
+  }
+  .early_access {
+    height: 43vh;
+  }
   .early_access h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
   }
-
-  .get_info {
-    max-width: 100%;
+  .early_access_info {
+    width: 95%;
+    padding-top: 2em;
   }
-
+  .get {
+    position: relative;
+  }
   form input {
-    width: 100%;
-    margin: 3px 0;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+    width: 90%;
   }
+
   form button {
-    width: 100%;
+    margin: 1rem 0;
+    width: 90%;
   }
-  .Footer_logo_box {
-    width: 20px;
+
+  footer:active,
+  footer:visited,
+  footer {
+    padding: 15rem 0 1rem 1rem;
+    margin: 0 auto;
+    background-color: #0c1524;
+  }
+  .footer_row {
+    display: block;
+    /* justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; */
+  }
+  .footer_icons{
+      text-align: center;
   }
 }
